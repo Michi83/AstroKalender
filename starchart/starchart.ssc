@@ -1,0 +1,75 @@
+// Put this script in ~/.stellarium/scripts and run it from within Stellarium.
+// If necessary, manually adjust settings before running:
+// - displayed DSO catalogs
+// - custom screenshot size
+
+var year = 2021
+var monthFrom = 1
+var monthTo = 12
+
+core.setTimeRate(0)
+core.setObserverLocation(10, 50, 0)
+core.setTimezone("UTC+01:00")
+core.setGuiVisible(false)
+core.setAppLanguage("de")
+core.setSkyLanguage("de")
+core.setBortleScaleIndex(1)
+ConstellationMgr.setFlagLines(true)
+ConstellationMgr.setFlagLabels(true)
+GridLinesMgr.setFlagEquatorLine(true)
+GridLinesMgr.setFlagEclipticLine(true)
+LandscapeMgr.setCurrentLandscapeID("zero")
+LandscapeMgr.setFlagAtmosphere(false)
+NebulaMgr.setFlagHints(true)
+StelMovementMgr.zoomTo(180)
+StelMovementMgr.lookZenith()
+core.wait(2)
+
+var isLeapYear = function (year) {
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            return year % 400 == 0
+        } else {
+            return true
+        }
+    } else {
+        return false
+    }
+}
+
+var getMonthLength = function (month, year) {
+    switch (month) {
+    case 2:
+        return isLeapYear(year) ? 29 : 28
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        return 30
+    default:
+        return 31
+    }
+}
+
+var addLeadingZeros = function (number, length) {
+    number = number.toString()
+    while (number.length < length) {
+        number = "0" + number
+    }
+    return number
+}
+
+var yearStr = addLeadingZeros(year, 4)
+for (var month = monthFrom; month <= monthTo; month++) {
+    var monthStr = addLeadingZeros(month, 2)
+    var monthLength = getMonthLength(month, year)
+    for (var day = 1; day <= monthLength; day++) {
+        var dayStr = addLeadingZeros(day, 2)
+        var dateStr = yearStr + "-" + monthStr + "-" + dayStr + "T22:00:00"
+        var prefix = yearStr + "-" + monthStr + "-" + dayStr
+        core.setDate(dateStr, "local")
+        core.wait(0.1)
+        core.screenshot(prefix, false, "", true, "png")
+    }
+}
+core.setGuiVisible(true)
