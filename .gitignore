@@ -1,1 +1,3 @@
-calendar/config.py
+*/config.py
+*/__pycache__
+starchart/img/*
