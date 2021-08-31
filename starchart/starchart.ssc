@@ -4,7 +4,7 @@
 // - custom screenshot size
 
 var year = 2021
-var monthFrom = 1
+var monthFrom = 7
 var monthTo = 12
 
 core.setTimeRate(0)

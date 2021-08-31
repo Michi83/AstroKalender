@@ -42,7 +42,7 @@ def get_month_length(month, year):
 
 calendar = {}
 for i in range(3000000):
-    calendar[jdn] = "%d. %s %d" % (day, months[month], year)
+    calendar[jdn] = "%d. %s %d" % (day, months[month], year + 753)
     jdn += 1
     day += 1
     if day > get_month_length(month, year):

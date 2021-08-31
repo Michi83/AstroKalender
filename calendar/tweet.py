@@ -40,11 +40,14 @@ with open("calendar_data.txt", "r") as file:
             break
 message = "Guten Morgen.🌞\n\n"
 message += "%s (greg.)\n" % gregorian_date
-message += "%s (jul.)\n" % julian_date
+message += "%s (jul.)*\n" % julian_date
 message += "%s (jüd.)\n" % hebrew_date
-message += "%s (isl.)\n" % islamic_date
-message += "%s (frz.)\n" % french_date
-message += "%s (maya.)" % mayan_date
+message += "%s (isl.)**\n" % islamic_date
+message += "%s (frz.)***\n" % french_date
+message += "%s (Maya)\n\n" % mayan_date
+message += "*ab urbe condita\n"
+message += "**kuwaitischer Algorithmus\n"
+message += "***Romme-Schaltregel"
 api = Api(
     access_token_key=access_token_key,
     access_token_secret=access_token_secret,
