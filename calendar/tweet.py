@@ -38,20 +38,23 @@ with open("calendar_data.txt", "r") as file:
         mayan_date = fields[6]
         if gregorian_date == todays_date:
             break
-message = "Guten Morgen.🌞\n\n"
-message += "%s (greg.)\n" % gregorian_date
-message += "%s (jul.)*\n" % julian_date
-message += "%s (jüd.)\n" % hebrew_date
-message += "%s (isl.)**\n" % islamic_date
-message += "%s (frz.)***\n" % french_date
-message += "%s (Maya)\n\n" % mayan_date
-message += "*ab urbe condita\n"
-message += "**kuwaitischer Algorithmus\n"
-message += "***Romme-Schaltregel"
 api = Api(
     access_token_key=access_token_key,
     access_token_secret=access_token_secret,
     consumer_key=consumer_key,
     consumer_secret=consumer_secret
 )
-api.PostUpdate(message)
+message = "Guten Morgen.🌞\n\n"
+message += "%s (greg.)\n" % gregorian_date
+message += "%s (jul.)*\n" % julian_date
+message += "%s (jüd.)\n" % hebrew_date
+message += "%s (isl.)**\n" % islamic_date
+message += "%s (frz.)***\n" % french_date
+message += "%s (Maya)****" % mayan_date
+result = api.PostUpdate(message)
+id = result.id
+message = "*ab urbe condita\n"
+message += "**kuwaitischer Algorithmus\n"
+message += "***Romme-Schaltregel\n"
+message += "****GMT-Korrelation"
+api.PostUpdate(message, in_reply_to_status_id=id)
