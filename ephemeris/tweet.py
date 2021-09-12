@@ -60,6 +60,10 @@ months = {
     "Dec": 12
 }
 
+months_german = (None, "Januar", "Februar", "März", "April", "Mai", "Juni",
+                 "Juli", "August", "September", "Oktober", "November",
+                 "Dezember")
+
 api = Api(
     access_token_key=access_token_key,
     access_token_secret=access_token_secret,
@@ -71,6 +75,12 @@ today = date.today()
 today_year = today.year
 today_month = today.month
 today_day = today.day
+message = "Ephemeriden für den %d. %s, 00:00 UT." % (
+    today_day,
+    months_german[today_month]
+)
+result = api.PostUpdate(message)
+last_id = result.id
 for i in range(9):
     filename = filenames[i]
     name = names[i]
@@ -128,13 +138,13 @@ for i in range(9):
                         dec_minutes,
                         dec_seconds
                     )
-                    message += "Helligkeit: %.3fᵐ\n" % magnitude
+                    message += "Helligkeit: %.3f mag\n" % magnitude
                     if i == MOON:
                         # km for the moon, au for everything else
-                        distance *= 149597870.7
-                        message += "Abstand: %f km" % distance
+                        distance = round(149597870.7 * distance)
+                        message += "Entfernung: %d km" % distance
                     else:
-                        message += "Abstand: %f AE" % distance
+                        message += "Entfernung: %f AU" % distance
                     if i != SUN:
                         message += "\n"
                         message += "Elongation: %.4f°" % elongation
@@ -144,12 +154,9 @@ for i in range(9):
                             message += " (folgend)"
                         message += "\n"
                         message += "Phasenwinkel: %.4f°" % phase_angle
-                    if i == SUN:
-                        result = api.PostUpdate(message)
-                    else:
-                        result = api.PostUpdate(
-                            message,
-                            in_reply_to_status_id=last_id
-                        )
+                    result = api.PostUpdate(
+                        message,
+                        in_reply_to_status_id=last_id
+                    )
                     last_id = result.id
                     break
