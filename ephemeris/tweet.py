@@ -75,9 +75,10 @@ today = date.today()
 today_year = today.year
 today_month = today.month
 today_day = today.day
-message = "Ephemeriden für den %d. %s, 00:00 UT." % (
+message = "Ephemeriden für den %d. %s %d, 00:00 UT." % (
     today_day,
-    months_german[today_month]
+    months_german[today_month],
+    today_year
 )
 result = api.PostUpdate(message)
 last_id = result.id
