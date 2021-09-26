@@ -1,0 +1,163 @@
+2021-09-26 Test.
+
+# 2022
+
+# Januar
+2022-01-01 Mond im Perigäum.🌙
+2022-01-02 Neumond.🌑
+2022-01-04 Erde im Perihel.🌍
+2022-01-04 Maximum der Quadrantiden.🌠
+2022-01-07 Merkur in größter östlicher Elongation.
+2022-01-09 Zunehmender Halbmond.🌓
+2022-01-09 Venus im unterer Konjunktion.
+2022-01-14 Mond im Apogäum.🌙
+2022-01-15 Merkur im Perihel.
+2022-01-18 Vollmond.🌕
+2022-01-18 Uranus im zweiten Stillstand.
+2022-01-21 Merkur in unterer Konjunktion.
+2022-01-23 Venus im Perihel.
+2022-01-25 Abnehmender Halbmond.🌗
+2022-01-30 Mond im Perigäum.🌙
+
+# Februar
+2022-02-01 Neumond.🌑
+2022-02-04 Saturn in Konjunktion.🪐
+2022-02-08 Zunehmender Halbmond.🌓
+2022-02-11 Mond im Apogäum.🌙
+2022-02-16 Vollmond.🌕
+2022-02-16 Merkur in größter westlicher Elongation.
+2022-02-23 Abnehmender Halbmond.🌗
+2022-02-26 Mond im Perigäum.🌙
+2022-02-28 Merkur im Aphel.
+
+# März
+2022-03-02 Neumond.🌑
+2022-03-05 Jupiter in Konjunktion.
+2022-03-10 Zunehmender Halbmond.🌓
+2022-03-11 Mond im Apogäum.🌙
+2022-03-13 Neptun in Konjunktion.
+2022-03-18 Vollmond.🌕
+2022-03-20 Frühlings-Tagundnachtgleiche.🌞
+2022-03-20 Venus in größter westlicher Elongation.
+2022-03-14 Mond im Perigäum.🌙
+2022-03-25 Abnehmender Halbmond.🌗
+
+# April
+2022-04-01 Neumond.🌑
+2022-04-03 Merkur in oberer Konjunktion.
+2022-04-07 Mond im Apogäum.🌙
+2022-04-09 Zunehmender Halbmond.🌓
+2022-04-13 Merkur im Perihel.
+2022-04-16 Vollmond.🌕
+2022-04-19 Mond im Perigäum.🌙
+2022-04-23 Abnehmender Halbmond.🌗
+2022-04-29 Merkur in größter östlicher Elongation.
+2022-04-30 Neumond, partielle Sonnenfinsternis (in 🇩🇪🇦🇹🇨🇭 nicht zu sehen).🌑
+
+# Mai
+2022-05-05 Mond im Apogäum.🌙
+2022-05-05 Uranus in Konjunktion.
+2022-05-09 Zunehmender Halbmond.🌓
+2022-05-15 Venus im Aphel.
+2022-05-16 Vollmond, totale Mondfinsternis.🌕
+2022-05-17 Mond im Perigäum.🌙
+2022-05-21 Merkur in unterer Konjunktion.
+2022-05-22 Abnehmender Halbmond.🌗
+2022-05-27 Merkur im Aphel.
+2022-05-30 Neumond.🌑
+
+# Juni
+2022-06-02 Mond im Apogäum.🌙
+2022-06-05 Saturn im ersten Stillstand.🪐
+2022-06-07 Zunehmender Halbmond.🌓
+2022-06-14 Vollmond.🌕
+2022-06-15 Mond im Perigäum.🌙
+2022-06-16 Merkur in größter westlicher Elongation.
+2022-06-21 Abnehmender Halbmond.🌗
+2022-06-21 Sommersonnenwende.🌞
+2022-06-21 Mars im Perihel.
+2022-06-29 Neumond.🌑
+2022-06-29 Mond im Apogäum.🌙
+2022-06-29 Neptun im ersten Stillstand.
+
+# Juli
+2022-07-04 Erde im Aphel.🌍
+2022-07-07 Zunehmender Halbmond.🌓
+2022-07-10 Merkur im Perihel.
+2022-07-13 Vollmond.🌕
+2022-07-13 Mond im Perigäum.🌙
+2022-07-16 Merkur in oberer Konjunktion.
+2022-07-20 Abnehmender Halbmond.🌗
+2022-07-26 Mond im Apogäum.🌙
+2022-07-28 Neumond.🌑
+2022-07-29 Jupiter im ersten Stillstand.
+
+# August
+2022-08-05 Zunehmender Halbmond.🌓
+2022-08-10 Mond im Perigäum.🌙
+2022-08-12 Vollmond.🌕
+2022-08-12 Maximum der Perseiden.🌠
+2022-08-14 Saturn in Opposition.🪐
+2022-08-19 Abnehmender Halbmond.🌗
+2022-08-22 Mond im Apogäum.🌙
+2022-08-23 Merkur im Aphel.
+2022-08-24 Uranus im ersten Stillstand.
+2022-08-27 Neumond.🌑
+2022-08-27 Merkur in größter östlicher Elongation.
+
+# September
+2022-09-03 Zunehmender Halbmond.🌓
+2022-09-04 Venus im Perihel.
+2022-09-07 Mond im Perigäum.🌙
+2022-09-10 Vollmond.🌕
+2022-09-14 Mond bedeckt Uranus.
+2022-09-16 Neptun in Opposition.
+2022-09-17 Abnehmender Halbmond.🌗
+2022-09-19 Mond im Apogäum.🌙
+2022-09-23 Herbst-Tagundnachtgleiche.🌞
+2022-09-23 Merkur in unterer Konjunktion.
+2022-09-25 Neumond.🌑
+2022-09-26 Jupiter in Opposition.
+
+# Oktober
+2022-10-03 Zunehmender Halbmond.🌓
+2022-10-04 Mond im Perigäum.🌙
+2022-10-06 Merkur im Perihel.
+2022-10-08 Merkur in größter westlicher Elongation.
+2022-10-09 Vollmond.🌕
+2022-10-17 Abnehmender Halbmond.🌗
+2022-10-17 Mond im Apogäum.🌙
+2022-10-22 Venus in oberer Konjunktion.
+2022-10-23 Saturn im zweiten Stillstand.🪐
+2022-10-25 Neumond, partielle Sonnenfinsternis.🌑
+2022-10-29 Mond im Perigäum.🌙
+2022-10-30 Mars im ersten Stillstand.
+
+# November
+2022-11-01 Zunehmender Halbmond.🌓
+2022-11-08 Vollmond, totale Mondfinsternis (in 🇩🇪🇦🇹🇨🇭 nicht zu sehen).🌕
+2022-11-08 Merkur in oberer Konjunktion.
+2022-11-09 Uranus in Opposition.
+2022-11-14 Mond im Apogäum.🌙
+2022-11-16 Abnehmender Halbmond.🌗
+2022-11-19 Merkur im Aphel.
+2022-11-23 Neumond.🌑
+2022-11-24 Jupiter im zweiten Stillstand.
+2022-11-26 Mond im Perigäum.🌙
+2022-11-30 Zunehmender Halbmond.🌓
+
+# Dezember
+2022-12-04 Neptun im zweiten Stillstand.
+2022-12-05 Mond bedeckt Uranus.
+2022-12-08 Vollmond.🌕
+2022-12-08 Mars in Opposition.
+2022-12-08 Mond bedeckt Mars.
+2022-12-12 Mond im Apogäum.🌙
+2022-12-13 Maximum der Geminiden.🌠
+2022-12-16 Abnehmender Halbmond.🌗
+2022-12-21 Wintersonnenwende.🌞
+2022-12-21 Merkur in größter östlicher Elongation.
+2022-12-23 Neumond.🌑
+2022-12-24 Mond im Perigäum.🌙
+2022-12-26 Venus im Aphel.
+2022-12-30 Zunehmender Halbmond.🌓
