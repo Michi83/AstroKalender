@@ -1,3 +1,5 @@
+from sys import path
+path.append("..")
 from config import (access_token_key, access_token_secret, consumer_key,
                     consumer_secret)
 from datetime import date
