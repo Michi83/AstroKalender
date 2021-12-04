@@ -54,6 +54,26 @@ def is_christmas(month, day):
     return month == 12 and day == 25
 
 
+def is_independence_day(month, day):
+    return month == 7 and day == 4
+
+
+def is_bastille_day(month, day):
+    return month == 7 and day == 14
+
+
+def is_unification_day(month, day):
+    return month == 10 and day == 3
+
+
+def is_austrian_national_day(month, day):
+    return month == 10 and day == 26
+
+
+def is_swiss_national_day(month, day):
+    return month == 8 and day == 1
+
+
 today = date.today()
 year = today.year
 month = today.month
@@ -77,17 +97,25 @@ api = Api(
     consumer_key=consumer_key,
     consumer_secret=consumer_secret
 )
-message = "Guten Morgen."
+message = "Guten Morgen.🌞"
 if is_valentines_day(month, day):
     message += "💞"
-elif is_easter(year, month, day):
+if is_easter(year, month, day):
     message += "🐰"
-elif is_halloween(month, day):
+if is_halloween(month, day):
     message += "🎃"
-elif is_christmas(month, day):
+if is_christmas(month, day):
     message += "🎅"
-else:
-    message += "🌞"
+if is_independence_day(month, day):
+    message += "🛸"
+if is_bastille_day(month, day):
+    message += "🇫🇷"
+if is_unification_day(month, day):
+    message += "🇩🇪"
+if is_austrian_national_day(month, day):
+    message += "🇦🇹"
+if is_swiss_national_day(month, day):
+    message += "🇨🇭"
 message += "\n\n"
 message += "%s (greg.)\n" % gregorian_date
 message += "%s (jul./a.u.c.)\n" % julian_date
