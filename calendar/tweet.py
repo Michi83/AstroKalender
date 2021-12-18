@@ -27,6 +27,10 @@ def is_valentines_day(month, day):
     return month == 2 and day == 14
 
 
+def is_april_fools_day(month, day):
+    return month == 4 and day == 1
+
+
 def is_easter(year, month, day):
     # see Astronomical Algorithms by Jean Meeus
     a = year % 19
@@ -97,25 +101,31 @@ api = Api(
     consumer_key=consumer_key,
     consumer_secret=consumer_secret
 )
-message = "Guten Morgen.🌞"
+message = "Guten Morgen."
+emojis = ""
 if is_valentines_day(month, day):
-    message += "💞"
+    emojis += "💞"
+if is_april_fools_day(month, day):
+    emojis += "🤡"
 if is_easter(year, month, day):
-    message += "🐰"
+    emojis += "🐰"
 if is_halloween(month, day):
-    message += "🎃"
+    emojis += "🎃"
 if is_christmas(month, day):
-    message += "🎅"
+    emojis += "🎅"
 if is_independence_day(month, day):
-    message += "🛸"
+    emojis += "🛸"
 if is_bastille_day(month, day):
-    message += "🇫🇷"
+    emojis += "🇫🇷"
 if is_unification_day(month, day):
-    message += "🇩🇪"
+    emojis += "🇩🇪"
 if is_austrian_national_day(month, day):
-    message += "🇦🇹"
+    emojis += "🇦🇹"
 if is_swiss_national_day(month, day):
-    message += "🇨🇭"
+    emojis += "🇨🇭"
+if emojis == "":
+    emojis += "🌞"
+message += emojis
 message += "\n\n"
 message += "%s (greg.)\n" % gregorian_date
 message += "%s (jul./a.u.c.)\n" % julian_date
