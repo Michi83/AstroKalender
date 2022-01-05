@@ -1,10 +1,10 @@
 // Put this script in ~/.stellarium/scripts and run it from within Stellarium.
 // If necessary, manually adjust settings before running:
-// - displayed DSO catalogs
-// - custom screenshot size
+// - displayed DSO catalogs (M)
+// - custom screenshot size (1024x1024)
 
-var year = 2021
-var monthFrom = 7
+var year = 2022
+var monthFrom = 1
 var monthTo = 12
 
 core.setTimeRate(0)
