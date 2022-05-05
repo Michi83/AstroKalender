@@ -1,0 +1,139 @@
+from sys import path
+path.append("..")
+from config import mastodon_access_token, mastodon_api_base_url
+from datetime import date
+from mastodon import Mastodon
+
+
+months = [
+    None,
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember"
+]
+
+
+def is_valentines_day(month, day):
+    return month == 2 and day == 14
+
+
+def is_april_fools_day(month, day):
+    return month == 4 and day == 1
+
+
+def is_easter(year, month, day):
+    # see Astronomical Algorithms by Jean Meeus
+    a = year % 19
+    b = year // 100
+    c = year % 100
+    d = b // 4
+    e = b % 4
+    f = (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i = c // 4
+    k = c % 4
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    n = (h + l - 7 * m + 114) // 31
+    p = (h + l - 7 * m + 114) % 31
+    return month == n and day == p + 1
+
+
+def is_halloween(month, day):
+    return month == 10 and day == 31
+
+
+def is_christmas(month, day):
+    return month == 12 and day == 25
+
+
+def is_independence_day(month, day):
+    return month == 7 and day == 4
+
+
+def is_bastille_day(month, day):
+    return month == 7 and day == 14
+
+
+def is_unification_day(month, day):
+    return month == 10 and day == 3
+
+
+def is_austrian_national_day(month, day):
+    return month == 10 and day == 26
+
+
+def is_swiss_national_day(month, day):
+    return month == 8 and day == 1
+
+
+today = date.today()
+year = today.year
+month = today.month
+day = today.day
+todays_date = "%d. %s %d" % (day, months[month], year)
+with open("calendar_data.txt", "r") as file:
+    for line in file:
+        fields = line.strip().split(",")
+        jdn = fields[0]
+        gregorian_date = fields[1]
+        julian_date = fields[2]
+        hebrew_date = fields[3]
+        islamic_date = fields[4]
+        french_date = fields[5]
+        mayan_date = fields[6]
+        if gregorian_date == todays_date:
+            break
+message = "Guten Morgen."
+emojis = ""
+if is_valentines_day(month, day):
+    emojis += "💞"
+if is_april_fools_day(month, day):
+    emojis += "🤡"
+if is_easter(year, month, day):
+    emojis += "🐰"
+if is_halloween(month, day):
+    emojis += "🎃"
+if is_christmas(month, day):
+    emojis += "🎅"
+if is_independence_day(month, day):
+    emojis += "🛸"
+if is_bastille_day(month, day):
+    emojis += "🇫🇷"
+if is_unification_day(month, day):
+    emojis += "🇩🇪"
+if is_austrian_national_day(month, day):
+    emojis += "🇦🇹"
+if is_swiss_national_day(month, day):
+    emojis += "🇨🇭"
+if emojis == "":
+    emojis += "🌞"
+message += emojis
+message += "\n\n"
+message += "%s (greg.)\n" % gregorian_date
+message += "%s (jul./a.u.c.)\n" % julian_date
+message += "%s (jüd.)\n" % hebrew_date
+message += "%s (isl.)¹\n" % islamic_date
+message += "%s (frz.)²\n" % french_date
+message += "%s (Maya)³\n" % mayan_date
+message += "\n"
+message += "¹Kuwaitischer Algorithmus\n"
+message += "²Romme-Schaltregel\n"
+message += "³GMT-Korrelation\n"
+message += "\n"
+message += "#Astrodon"
+mastodon = Mastodon(
+    access_token=mastodon_access_token,
+    api_base_url=mastodon_api_base_url
+)
+mastodon.toot(message)
