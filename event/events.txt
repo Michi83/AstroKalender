@@ -1,5 +1,4 @@
 # 2022
-
 # Januar
 2022-01-01 Mond im Perigäum.🌙
 2022-01-02 Neumond.🌑
@@ -159,3 +158,161 @@
 2022-12-24 Mond im Perigäum.🌙
 2022-12-26 Venus im Aphel.
 2022-12-30 Zunehmender Halbmond.🌓
+
+
+# 2023
+# Januar
+2023-01-02 Merkur im Perihel.
+2023-01-04 Erde im Perihel.🌍
+2023-01-04 Maximum der Quadrantiden.🌠
+2023-01-07 Vollmond.🌕
+2023-01-07 Merkur in unterer Konjunktion.
+2023-01-08 Mond im Apogäum.🌙
+2023-01-12 Mars im zweiten Stillstand.🔴
+2023-01-15 Abnehmender Halbmond.🌗
+2023-01-20 Jupiter im Perihel.
+2023-01-21 Neumond.🌑
+2023-01-21 Mond im Perigäum.🌙
+2023-01-23 Uranus im zweiten Stillstand.
+2023-01-28 Zunehmender Halbmond.🌓
+2023-01-30 Merkur in größter westlicher Elongation.
+
+# Februar
+2023-02-04 Mond im Apogäum.🌙
+2023-02-05 Vollmond.🌕
+2023-02-13 Abnehmender Halbmond.🌗
+2023-02-15 Merkur im Aphel.
+2023-02-16 Saturn in Konjunktion.🪐
+2023-02-19 Mond im Perigäum.🌙
+2023-02-20 Neumond.🌑
+2023-02-27 Zunehmender Halbmond.🌓
+
+# März
+2023-03-03 Mond im Apogäum.🌙
+2023-03-07 Vollmond.🌕
+2023-03-15 Abnehmender Halbmond.🌗
+2023-03-16 Neptun in Konjunktion.
+2023-03-17 Merkur in oberer Konjunktion.
+2023-03-19 Mond im Perigäum.🌙
+2023-03-20 Frühlings-Tagundnachtgleiche.🌞
+2023-03-21 Neumond.🌑
+2023-03-29 Zunehmender Halbmond.🌓
+2023-03-31 Mond im Apogäum.🌙
+2023-03-31 Merkur im Perihel.
+
+# April
+2023-04-06 Vollmond.🌕
+2023-04-11 Merkur in größter östlicher Elongation.
+2023-04-11 Jupiter in Konjunktion.
+2023-04-13 Abnehmender Halbmond.🌗
+2023-04-16 Mond im Perigäum.🌙
+2023-04-17 Venus im Perihel.
+2023-04-20 Neumond.🌑 Ringförmig-totale Sonnenfinsternis (in 🇩🇪🇦🇹🇨🇭 leider nicht zu sehen).
+2023-04-27 Zunehmender Halbmond.🌓
+2023-04-28 Mond im Apogäum.🌙
+
+# Mai
+2023-05-02 Merkur in unterer Konjunktion.
+2023-05-05 Vollmond.🌕 Halbschatten-Mondfinsternis.
+2023-05-09 Uranus in Konjunktion.
+2023-05-11 Mond im Perigäum.🌙
+2023-05-12 Abnehmender Halbmond.🌗
+2023-05-14 Merkur im Aphel.
+2023-05-19 Neumond.🌑
+2023-05-26 Mond im Apogäum.🌙
+2023-05-27 Zunehmender Halbmond.🌓
+2023-05-29 Merkur in größter westlicher Elongation.
+2023-05-30 Mars im Aphel.🔴
+
+# Juni
+2023-06-04 Vollmond.🌕
+2023-06-04 Venus in größter östlicher Elongation.
+2023-06-06 Mond im Perigäum.🌙
+2023-06-10 Abnehmender Halbmond.🌗
+2023-06-18 Neumond.🌑
+2023-06-18 Saturn im ersten Stillstand.🪐
+2023-06-21 Sommersonnenwende.🌞
+2023-06-22 Mond im Apogäum.🌙
+2023-06-26 Zunehmender Halbmond.🌓
+2023-06-27 Merkur im Perihel.
+
+# Juli
+2023-07-01 Merkur in oberer Konjunktion.
+2023-07-01 Neptun im ersten Stillstand.
+2023-07-03 Vollmond.🌕
+2023-07-04 Mond im Perigäum.🌙
+2023-07-06 Erde im Aphel.🌍
+2023-07-10 Abnehmender Halbmond.🌗
+2023-07-17 Neumond.🌑
+2023-07-20 Mond im Apogäum.🌙
+2023-07-25 Zunehmender Halbmond.🌓
+
+# August
+2023-08-01 Vollmond.🌕
+2023-08-02 Mond im Perigäum.🌙
+2023-08-07 Venus im Aphel.
+2023-08-08 Abnehmender Halbmond.🌗
+2023-08-10 Merkur in größter östlicher Elongation.
+2023-08-10 Merkur im Aphel.
+2023-08-13 Venus in unterer Konjunktion.
+2023-08-13 Maximum der Perseiden.🌠
+2023-08-16 Neumond.🌑
+2023-08-16 Mond im Apogäum.🌙
+2023-08-24 Zunehmender Halbmond.🌓
+2023-08-27 Saturn in Opposition.🪐
+2023-08-29 Uranus im ersten Stillstand.
+2023-08-30 Mond im Perigäum.🌙
+2023-08-31 Vollmond.🌕
+
+# September
+2023-09-04 Jupiter im ersten Stillstand.
+2023-09-06 Abnehmender Halbmond.🌗
+2023-09-06 Merkur in unterer Konjunktion.
+2023-09-12 Mond im Apogäum.🌙
+2023-09-15 Neumond.🌑
+2023-09-19 Neptun in Opposition.
+2023-09-22 Zunehmender Halbmond.🌓
+2023-09-22 Merkur in größter westlicher Elongation.
+2023-09-23 Herbst-Tagundnachtgleiche.🌞
+2023-09-23 Merkur im Perihel.
+2023-09-28 Mond im Perigäum.🌙
+2023-09-29 Vollmond.🌕
+
+# Oktober
+2023-10-06 Abnehmender Halbmond.🌗
+2023-10-10 Mond im Apogäum.🌙
+2023-10-14 Neumond.🌑 Ringförmige Sonnenfinsternis (in 🇩🇪🇦🇹🇨🇭 leider nicht zu sehen).
+2023-10-20 Merkur in oberer Konjunktion.
+2023-10-22 Zunehmender Halbmond.🌓
+2023-10-24 Venus in größter westlicher Elongation.
+2023-10-26 Mond im Perigäum.🌙
+2023-10-28 Vollmond.🌕 Partielle Mondfinsternis.
+
+# November
+2023-11-03 Jupiter in Opposition.
+2023-11-04 Saturn im zweiten Stillstand.🪐
+2023-11-05 Abnehmender Halbmond.🌗
+2023-11-06 Mond im Apogäum.🌙
+2023-11-06 Merkur im Aphel.
+2023-11-13 Neumond.🌑
+2023-11-13 Uranus in Opposition.
+2023-11-18 Mars in Konjunktion.🔴
+2023-11-20 Zunehmender Halbmond.🌓
+2023-11-21 Mond im Perigäum.🌙
+2023-11-27 Vollmond.🌕
+2023-11-28 Venus im Perihel.
+
+# Dezember
+2023-12-04 Mond im Apogäum.🌙
+2023-12-04 Merkur in größter östlicher Elongation.
+2023-12-05 Abnehmender Halbmond.🌗
+2023-12-07 Neptun im zweiten Stillstand.
+2023-12-13 Neumond.🌑
+2023-12-14 Maximum der Geminiden.🌠
+2023-12-16 Mond im Perigäum.🌙
+2023-12-19 Zunehmender Halbmond.🌓
+2023-12-20 Merkur im Perihel.
+2023-12-22 Wintersonnenwende.🌞
+2023-12-22 Merkur in unterer Konjunktion.
+2023-12-27 Vollmond.🌕
+2023-12-31 Jupiter im zweiten Stillstand.
