@@ -23,4 +23,4 @@ with open("events.txt", "r") as file:
         day = int(line[8:10])
         if year == today_year and month == today_month and day == today_day:
             message = line[11:]
-            mastodon.toot(message + " #Astrodon")
+            mastodon.toot(message + " #Astronomie #Astrodon")

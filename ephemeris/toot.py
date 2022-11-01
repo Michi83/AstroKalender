@@ -74,7 +74,7 @@ today = date.today()
 today_year = today.year
 today_month = today.month
 today_day = today.day
-message = "Ephemeriden für den %d. %s %d, 00:00 UT. #Astrodon" % (
+message = "Ephemeriden für den %d. %s %d, 00:00 UT. #Astronomie #Astrodon" % (
     today_day,
     months_german[today_month],
     today_year

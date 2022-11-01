@@ -3,7 +3,7 @@
 // - displayed DSO catalogs (M)
 // - custom screenshot size (1024x1024)
 
-var year = 2022
+var year = 2023
 var monthFrom = 1
 var monthTo = 12
 

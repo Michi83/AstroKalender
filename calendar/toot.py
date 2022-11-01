@@ -94,7 +94,7 @@ with open("calendar_data.txt", "r") as file:
         mayan_date = fields[6]
         if gregorian_date == todays_date:
             break
-message = "Guten Morgen."
+message = "#GutenMorgen."
 emojis = ""
 if is_valentines_day(month, day):
     emojis += "💞"
@@ -131,7 +131,7 @@ message += "¹Kuwaitischer Algorithmus\n"
 message += "²Romme-Schaltregel\n"
 message += "³GMT-Korrelation\n"
 message += "\n"
-message += "#Astrodon"
+message += "#Astronomie #Astrodon"
 mastodon = Mastodon(
     access_token=mastodon_access_token,
     api_base_url=mastodon_api_base_url
