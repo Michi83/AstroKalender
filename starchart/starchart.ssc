@@ -110,7 +110,7 @@ var writeAltText = function (year, month, day, prefix) {
         var az = info.azimuth
         if (alt >= 0) {
             if (alt >= 60) {
-                zenith.push(bodies[i])
+                zenith.push(bodiesDe[i])
             } else if (az >= 315 || az < 45) {
                 north.push(bodiesDe[i])
             } else if (az >= 45 && az < 135) {
