@@ -3,7 +3,7 @@
 // - displayed DSO catalogs (M)
 // - custom screenshot size (1024x1024)
 
-var year = 2023
+var year = 2022
 var monthFrom = 1
 var monthTo = 12
 
@@ -59,7 +59,90 @@ var addLeadingZeros = function (number, length) {
     return number
 }
 
+// Image Descriptions
+// For some reason Stellarium fucks up umlauts so we'll replace e.g. ä with a*.
+// We need to remember to replace them later in the file. Sigh.
+
+var months = [null, "Januar", "Februar", "Ma*rz", "April", "Mai", "Juni",
+    "Juli", "August", "September", "Oktober", "November", "Dezember"]
+
+// Moon, planets and the 25 brightest stars.
+var bodies = ["Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus",
+    "Neptune", "Sirius", "Canopus", "Rigil Kentaurus", "Arcturus", "Vega",
+    "Capella", "Rigel", "Procyon", "Achernar", "Betelgeuse", "Hadar", "Altair",
+    "Acrux", "Aldebaran", "Antares", "Spica", "Pollux", "Fomalhaut", "Deneb",
+    "Mimosa", "Regulus", "Adhara", "Shaula", "Castor", "Gacrux"]
+
+var bodiesDe = ["Mond", "Merkur", "Venus", "Mars", "Jupiter", "Saturn",
+    "Uranus", "Neptun", "Sirius", "Canopus", "Alpha Centauri", "Arcturus",
+    "Vega", "Capella", "Rigel", "Procyon", "Achernar", "Beteigeuze", "Hadar",
+    "Altair", "Acrux", "Aldebaran", "Antares", "Spica", "Pollux", "Fomalhaut",
+    "Deneb", "Mimosa", "Regulus", "Adhara", "Schaula", "Castor", "Gacrux"]
+
+var join = function (items) {
+    var string = ""
+    for (var i = 0; i < items.length; i++) {
+        if (i > 0) {
+            if (i + 1 === items.length) {
+                string += " und "
+            } else {
+                string += ", "
+            }
+        }
+        string += items[i]
+    }
+    return string
+}
+
+var writeAltText = function (year, month, day, prefix) {
+    var altText = prefix + " Sternkarte für den "
+    altText += day + ". "
+    altText += months[month] + " "
+    altText += year + "."
+    var zenith = []
+    var north = []
+    var east = []
+    var south = []
+    var west = []
+    for (var i = 0; i < bodies.length; i++) {
+        var info = core.getObjectInfo(bodies[i])
+        var alt = info.altitude
+        var az = info.azimuth
+        if (alt >= 0) {
+            if (alt >= 60) {
+                zenith.push(bodies[i])
+            } else if (az >= 315 || az < 45) {
+                north.push(bodiesDe[i])
+            } else if (az >= 45 && az < 135) {
+                east.push(bodiesDe[i])
+            } else if (az >= 135 && az < 225) {
+                south.push(bodiesDe[i])
+            } else if (az >= 225 && az < 315) {
+                west.push(bodiesDe[i])
+            }
+        }
+    }
+    if (zenith.length > 0) {
+        altText += " In Zenitna*he: " + join(zenith) + "."
+    }
+    if (north.length > 0) {
+        altText += " Im Norden: " + join(north) + "."
+    }
+    if (east.length > 0) {
+        altText += " Im Osten: " + join(east) + "."
+    }
+    if (south.length > 0) {
+        altText += " Im Su*den: " + join(south) + "."
+    }
+    if (west.length > 0) {
+        altText += " Im Westen: " + join(west) + "."
+    }
+    altText += "\n"
+    core.output(altText)
+}
+
 var yearStr = addLeadingZeros(year, 4)
+core.resetOutput()
 for (var month = monthFrom; month <= monthTo; month++) {
     var monthStr = addLeadingZeros(month, 2)
     var monthLength = getMonthLength(month, year)
@@ -70,6 +153,7 @@ for (var month = monthFrom; month <= monthTo; month++) {
         core.setDate(dateStr, "local")
         core.wait(0.1)
         core.screenshot(prefix, false, "", true, "png")
+        writeAltText(year, month, day, prefix)
     }
 }
 core.setGuiVisible(true)
