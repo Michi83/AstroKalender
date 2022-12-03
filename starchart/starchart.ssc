@@ -3,7 +3,7 @@
 // - displayed DSO catalogs (M)
 // - custom screenshot size (1024x1024)
 
-var year = 2022
+var year = 2023
 var monthFrom = 1
 var monthTo = 12
 
@@ -95,7 +95,7 @@ var join = function (items) {
 }
 
 var writeAltText = function (year, month, day, prefix) {
-    var altText = prefix + " Sternkarte für den "
+    var altText = prefix + " Sternkarte fu*r den "
     altText += day + ". "
     altText += months[month] + " "
     altText += year + "."
@@ -137,7 +137,6 @@ var writeAltText = function (year, month, day, prefix) {
     if (west.length > 0) {
         altText += " Im Westen: " + join(west) + "."
     }
-    altText += "\n"
     core.output(altText)
 }
 
