@@ -2,7 +2,7 @@ from sys import path
 path.append("..")
 from config import mastodon_access_token, mastodon_api_base_url
 from datetime import date, datetime, timedelta
-from math import asin, atan2, cos, radians as rad, sin, tan, tau
+from math import asin, atan2, cos, pi, radians as rad, sin, tan
 from pytz import timezone, utc
 from mastodon import Mastodon
 
@@ -65,7 +65,7 @@ def right_ascension_declination_sidereal_time(jdn):
             y1 = data[i].alpha
             y2 = data[i + 1].alpha
             if y2 < y1:
-                y2 += tau
+                y2 += 2 * pi
             alpha = interpolate(x, x1, x2, y1, y2)
             y1 = data[i].delta
             y2 = data[i + 1].delta
@@ -73,8 +73,8 @@ def right_ascension_declination_sidereal_time(jdn):
             y1 = data[i].theta
             y2 = data[i + 1].theta
             if y2 < y1:
-                y2 += tau
-            y2 += tau
+                y2 += 2 * pi
+            y2 += 2 * pi
             theta = interpolate(x, x1, x2, y1, y2)
             return alpha, delta, theta
 
