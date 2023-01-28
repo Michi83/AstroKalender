@@ -165,6 +165,18 @@ toot(
     "koeln.txt"
 )
 toot(
+    "Frankfurt",
+    rad(50 + 2 / 60),
+    timezone("Europe/Berlin"),
+    "frankfurt.txt"
+)
+toot(
+    "Stuttgart",
+    rad(48 + 48 / 60),
+    timezone("Europe/Berlin"),
+    "stuttgart.txt"
+)
+toot(
     "Wien",
     rad(48 + 13 / 60),
     timezone("Europe/Vienna"),
