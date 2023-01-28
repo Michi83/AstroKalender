@@ -9,14 +9,13 @@ from mastodon import Mastodon
 # Horizons settings:
 # Time Specification: Start=2000-01-01 UT , Stop=2099-12-31, Step=1 (days)
 # Apparent RA & DEC
-# Local apparent sidereal time
+# Local apparent hour angle
 # calendar and Julian Day Number
 
 # Symbols:
 # jdn = Julian day number
-# alpha = right ascension
+# h = hour angle
 # delta = declination
-# theta = local sidereal time
 # A = azimuth
 # a = altitude
 
@@ -25,12 +24,11 @@ data = None
 
 
 class Datum:
-    def __init__(self, date, jdn, alpha, delta, theta):
+    def __init__(self, date, jdn, h, delta):
         self.date = date
         self.jdn = jdn
-        self.alpha = alpha
+        self.h = h
         self.delta = delta
-        self.theta = theta
 
 
 def load_data(filename):
@@ -45,10 +43,9 @@ def load_data(filename):
                 break
             date = line[1:12]
             jdn = float(line[19:36])
-            alpha = rad(float(line[41:50]))
             delta = rad(float(line[51:60]))
-            theta = rad(15 * float(line[62:75]))
-            datum = Datum(date, jdn, alpha, delta, theta)
+            h = rad(15 * float(line[62:75]))
+            datum = Datum(date, jdn, h, delta)
             data[date] = datum
             data[jdn] = datum
 
@@ -57,32 +54,23 @@ def interpolate(x, x1, x2, y1, y2):
     return y1 + (x - x1) * (y2 - y1) / (x2 - x1)
 
 
-def right_ascension_declination_sidereal_time(jdn):
+def hour_angle_declination(jdn):
     x = jdn
     datum1 = data[floor(jdn - 0.5) + 0.5]
     datum2 = data[floor(jdn - 0.5) + 1.5]
     x1 = datum1.jdn
     x2 = datum2.jdn
-    y1 = datum1.alpha
-    y2 = datum2.alpha
-    if y2 < y1:
-        y2 += 2 * pi
-    alpha = interpolate(x, x1, x2, y1, y2)
+    y1 = datum1.h
+    y2 = datum2.h + 2 * pi  # accounts for earth's rotation
+    h = interpolate(x, x1, x2, y1, y2)
     y1 = datum1.delta
     y2 = datum2.delta
     delta = interpolate(x, x1, x2, y1, y2)
-    y1 = datum1.theta
-    y2 = datum2.theta
-    if y2 < y1:
-        y2 += 2 * pi
-    y2 += 2 * pi
-    theta = interpolate(x, x1, x2, y1, y2)
-    return alpha, delta, theta
+    return h, delta
 
 
 def azimuth_altitude(jdn, phi):
-    alpha, delta, theta = right_ascension_declination_sidereal_time(jdn)
-    h = theta - alpha
+    h, delta = hour_angle_declination(jdn)
     A = atan2(sin(h), cos(h) * sin(phi) - tan(delta) * cos(phi))
     a = asin(sin(phi) * sin(delta) + cos(phi) * cos(delta) * cos(h))
     return A, a
